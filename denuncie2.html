@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico" type="imagem/icon" sizes="32x32" >
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+     <style type="text/css">
+
+    .container{
+      background-color: lightgray;
+      padding-top: 15px;
+      padding-bottom: 15px;}
+    .box{
+        width: 100%;
+        height: 25px;
+        background-color: lightgrey;
+
+        }
+
+       .cad{
+        width: 100%;
+        height: 35px;
+        margin: 0 auto;
+        width: 50%;
+      }
+
+
+    </style>
+
+
+
+
+</head>
+<body>
+	<div class="menu">
+ <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+  <div class="container-fluid">
+    <img src="logo.png" height="40" width="150">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link " aria-current="page" href="inicio2.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link "  href="noticia2.html">Noticias</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="Saibamais2.html">Saiba Mais</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="denuncie2.html">Denúncie</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="https://nacoesunidas.org/relator-da-onu-pede-estrategias-especificas-para-combater-a-xenofobia-durante-a-crise-migratoria/">Site da ONU</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+
+        <button type="submitn"  class="btn btn-outline-dark"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+Buscar</button></svg>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<div class="container" >
+  <center><img src="https://fontmeme.com/permalink/210611/843250dffbb3efc791491dc9ee40221a.png" alt="brush-fonts" border="0" width="75%"></center>
+  <hr>
+  <div class="card">
+  <div class="card-header">
+    <center><h4>Cadastro de Denuncias</h4></center>
+  </div> 
+  <form>
+  <h4 style="margin-top: 15px;" >  &nbsp;&nbsp;&nbsp;Dados Pessoais:</h4> &nbsp;
+  <div  style="margin-top: 15px;"  class="row">
+    <div  class="col">
+     &nbsp;&nbsp;
+     &nbsp;&nbsp;<label>Nome:</label>
+      <input title="Informe seu nome:" name="nome" required="" type="name" placeholder="Digite seu Nome Completo..." />
+    </div>
+    <div class="col">
+    <label >Sobrenome </label>
+      <input title="Informe seu nome:" name="nome" required="" type="name" placeholder="Digite seu Sobrenome..." />
+    </div>
+  </div>
+  <div style="margin-top: 15px;"  class="row">
+    <div  class="col">
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label> Data de Nascimento:</label>
+  <input title="Informe a data:" name="Sobrenome" required="" type="date" placeholder="Informe a data!" />
+    </div>
+    <div class="col">
+      <label> Sexo:</label> 
+  <input name="sexo" type="radio" value="masculino" /> Masculino
+  <input name="sexo" type="radio" value="feminino" /> Feminino 
+    </div>
+  </div>
+  <div style="margin-top: 15px;" class="row">
+    <div class="col">
+     &nbsp;&nbsp;&nbsp;&nbsp; <label>Estado Civil:</label>
+     <select id="txtEstadoCivil" name="txtEstadoCivil">
+     <option selected="selected" value="">SELECIONE</option>
+     <option value="1">Solteiro(a)</option>
+     <option value="2">Casado(a)</option>
+     <option value="5">Divorciado(a)</option>
+     <option value="3">Viuvo(a)</option>
+     </select></p>
+    </div>
+    <div class="col">
+    Cidade de Nascimento:<select id="txtcidadedenascimento" name="txtcidadedenascimento">&nbsp;
+      <option selected="selected" value="">SELECIONE</option>
+&nbsp;
+      <option value="1">Araras</option>
+&nbsp;
+      <option value="2">Americana</option>
+&nbsp;
+      <option value="7">Campinas</option>
+&nbsp;
+      <option value="5">Limeira</option>
+&nbsp;
+      <option value="3">Piracicaba</option>
+&nbsp;
+      <option value="8">Santa Barbara d' Oeste</option>
+&nbsp;</select>
+ </div>
+ <div class="row">
+    <div class="col">
+    &nbsp;&nbsp;&nbsp;&nbsp;  <label>Raça:</label>
+     <select><option selected="selected" value="">SELECIONE</option>
+&nbsp;
+<option value="1">Branco(a)</option>
+&nbsp;
+<option value="3">Preto(a)</option>
+&nbsp;
+<option value="3">Pardo(a)</option>
+&nbsp;
+<option value="4">Amarelo(a)</option>
+&nbsp;
+<option value="5">Indigena</option>
+</select>
+<hr>
+    </div>
+</div>
+
+  <h4 style="margin-top: 15px;" >  &nbsp;&nbsp;&nbsp;Contatos:</h4> &nbsp;
+ 
+ 
+    
+     <p><label for="telefone"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Telefone:</label> <input id="telefone" style="width: 10em;" name="telefone" type="text" value="" placeholder="(--)-----/----" /></p>
+    </div>
+    
+       <p><label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; E-mail:</label>
+        <input title="Informe seu E-mail" name="E-mail" required="" type="E-mail" placeholder="Informe seu E-mail..." /></p>
+    
+  <div class="card-body">
+    <hr>
+     <h5 class="card-title">Relate o Ocorrido!</h5>&nbsp;
+    <p class="card-text"><textarea hititle="Deixe sua mensagem" name="mensagem" required="" rows="3" placeholder="Deixe sua mensagem"></textarea></p>
+
+    <p><button type="reset"  value="Limpar" class="btn btn-secondary">Limpar</button> &nbsp;&nbsp;&nbsp;&nbsp;    
+       <button type="button" class="btn btn-secondary">Enviar</button></p>
+  </div>
+</div>
+</form>
+
+
+
+
+</div>
+
+
+
+</body>
+</html>
